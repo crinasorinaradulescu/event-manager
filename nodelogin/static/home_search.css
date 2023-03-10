@@ -1,0 +1,121 @@
+p{
+    margin-top: 2vh;
+    margin-left: 2.6vw;
+    /* text-align: center; */
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color:  #fefefe;
+    
+}
+
+.actions{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.simple-query{
+    display:flex;
+    width: 34vw;
+    height: 46vh;
+    border-radius: 20px;
+    /* border: 1px solid #11101b; */
+    background-color: #11101b;
+    margin-left: 3vw;
+    margin-top: 2vh;
+    flex-direction: column;
+}
+
+.complex-query{
+    display: flex;
+    flex-direction:column;
+    width: 32vw;
+    height:32vh;
+    border-radius:20px;
+    /* border: 1px solid #11101b; */
+    background-color: #11101b;
+    margin-left: 3vw;
+    margin-top: 2vh;
+}
+
+.query{
+    display: flex;
+    width: 24vw;
+    height: 3vh;
+    border-radius: 15px;
+    background-color: #fefefe;
+    margin-left: 2vw;
+}
+
+.query-avg{
+    display: flex;
+    width: 24vw;
+    height: 3vh;
+    border-radius: 15px;
+    background-color: #fefefe;
+    margin-left: 2vw;
+}
+
+.simple-query input{
+    background-color: transparent;
+    border: none;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+}
+
+.complex-query input{
+    background-color: transparent;
+    border: none;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+}
+
+::placeholder{
+    padding-left: 1vw;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.search{
+    width: 8vw;
+    height: 3vh;
+    border:none;
+    background-color: #fefefe;
+    border-radius: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 300;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.search-avg{
+    width: 8vw;
+    height: 3vh;
+    border:none;
+    background-color: #fefefe;
+    border-radius: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 300;
+    margin-left: 16vw;
+    cursor: pointer;
+}
+
+.search-total{
+    width: 8vw;
+    height: 3vh;
+    border:none;
+    background-color: #fefefe;
+    border-radius: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 300;
+    margin-left: 16vw;
+    cursor: pointer;
+}

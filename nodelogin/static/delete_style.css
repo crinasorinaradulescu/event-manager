@@ -1,0 +1,89 @@
+#del{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5vh;
+    margin-bottom: 4vh;
+
+}
+
+.delete-departament{
+    margin-left: 2vw;;
+}
+
+.delete-event{
+    margin-left: 2vw;;
+}
+
+
+label{
+    margin-left: 1.8vw;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 300;
+}
+
+.delete-nume{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.delete-prenume{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+
+.delete-numeDepartament{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.delete-tip{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.delete-buget{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}

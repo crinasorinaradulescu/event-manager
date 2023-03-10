@@ -1,0 +1,31 @@
+.search-bar{
+    width: 24vw;
+    height: 3vh;
+    border-radius: 15px;
+    background-color: #fefefe;
+}
+
+.search-bar input{
+    background-color: transparent;
+    border: none;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+}
+
+::placeholder{
+    padding-left: 1vw;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.btn{
+    width: 2vw;
+    height: 3vh;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}

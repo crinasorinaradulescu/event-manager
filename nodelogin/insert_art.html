@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/navbar_style.css">
+    <link rel="stylesheet" href="/search.css">
+    <link rel="stylesheet" href="/changes.css">
+    <link rel="stylesheet" href="/add_style.css">
+    <link rel="stylesheet" href="/delete_style.css">
+    <link rel="stylesheet" href="/update_style.css">
+    <script src="https://kit.fontawesome.com/17944d46af.js" crossorigin="anonymous"></script>
+    <title>Admin Pannel</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Eventim</div>
+            <form class="search-bar">
+                <input type="text" class="search" placeholder="Cauta artisti si evenimente">
+                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+            </form>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/artists">Artists</a>
+                </li>
+                <li>
+                    <a href="/departments">Departments</a>
+                </li>
+                <li>
+                    <a href="/events">Events</a>
+                </li>
+                <li>
+                    <a href="/admin"  class="active"><i class="fa-solid fa-user"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="add">
+        <form class="add-artist" action="/admin/insert-artist" method="post">
+            <p>Adauga Artist</p>
+            <!-- <label for="artistID">ArtistID</label><br>
+            <input type="text" class="artistID" name="artistID" placeholder="ex. 24">-->
+            <label for="depID">DepartamentID</label><br>
+            <input type="text" class="depID" name="departamentID" placeholder="ex. 30"> 
+            <label for="nume">Nume</label><br>
+            <input type="text" class="nume" name="nume" placeholder="ex. Popescu">
+            <label for="prenume">Prenume</label><br>
+            <input type="text" class="prenume" name="prenume" placeholder="ex. Ana">
+            <label for="cnp">CNP</label><br>
+            <input type="text" class="cnp" name="cnp" placeholder="ex. 6011111111111">
+            <label for="sex">Sex</label><br>
+            <input type="text" class="sex" name="sex" placeholder="M/F">
+            <label for="telefon">Telefon</label><br>
+            <input type="text" class="telefon" name="telefon" placeholder="ex. 0707070707">
+            <label for="strada">Strada</label><br>
+            <input type="text" class="strada" name="strada" placeholder="ex. Iuliu Maniu">
+            <label for="numar">Numar Strada</label><br>
+            <input type="text" class="numar" name="numar" placeholder="ex. 20">
+            <!--<label for="data">Data Angajarii</label><br>
+            <input type="date" class="dataAngajare" name="data" placeholder="ex. 1998-12-10">-->
+            <label for="salariu">Salariu</label><br>
+            <input type="text" class="salariu" name="salariu" placeholder="ex. 4000">
+            <button class="btn-submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <script>
+        hamburger = document.querySelection(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

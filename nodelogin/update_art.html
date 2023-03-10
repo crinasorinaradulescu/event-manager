@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/navbar_style.css">
+    <link rel="stylesheet" href="/search.css">
+    <link rel="stylesheet" href="/changes.css">
+    <link rel="stylesheet" href="/add_style.css">
+    <link rel="stylesheet" href="/delete_style.css">
+    <link rel="stylesheet" href="/update_style.css">
+    <script src="https://kit.fontawesome.com/17944d46af.js" crossorigin="anonymous"></script>
+    <title>Admin Pannel</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Eventim</div>
+            <form class="search-bar">
+                <input type="text" class="search" placeholder="Cauta artisti si evenimente">
+                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+            </form>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/artists">Artists</a>
+                </li>
+                <li>
+                    <a href="/departments">Departments</a>
+                </li>
+                <li>
+                    <a href="/events">Events</a>
+                </li>
+                <li>
+                    <a href="/admin"  class="active"><i class="fa-solid fa-user"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <p>Inlocuieste numele si prenumele Artistului</p>
+        <div id="up">
+            <form class="update-artist" action="/admin/update-artist" method="POST">
+                <label for="current-nume">Nume</label><br>
+                <input type="text" class="current-nume" name="currentNume" placeholder="ex. Popescu">
+                <label for="current-prenume">Prenume</label><br>
+                <input type="text" class="current-prenume" name="currentPrenume" placeholder="ex. Ana">
+                
+                <p>Cu alt nume si prenume</p>
+                <label for="update-nume">Nume</label><br>
+                <input type="text" class="update-nume" name="nume" placeholder="ex. Popescu">
+                <label for="update-prenume">Prenume</label><br>
+                <input type="text" class="update-prenume" name="prenume" placeholder="ex. Ana">
+                <button class="btn-submit" type="submit">Submit</button>
+            </form>
+           
+        </div>
+    
+
+    <script>
+        hamburger = document.querySelection(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

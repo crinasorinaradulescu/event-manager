@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/navbar_style.css">
+    <link rel="stylesheet" href="/search.css">
+    <link rel="stylesheet" href="/changes.css">
+    <link rel="stylesheet" href="/add_style.css">
+    <link rel="stylesheet" href="/delete_style.css">
+    <link rel="stylesheet" href="/update_style.css">
+    <script src="https://kit.fontawesome.com/17944d46af.js" crossorigin="anonymous"></script>
+    <title>Insert Department</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Eventim</div>
+            <form class="search-bar">
+                <input type="text" class="search" placeholder="Cauta artisti si evenimente">
+                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+            </form>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/artists">Artists</a>
+                </li>
+                <li>
+                    <a href="/departments">Departments</a>
+                </li>
+                <li>
+                    <a href="/events">Events</a>
+                </li>
+                <li>
+                    <a href="/admin"  class="active"><i class="fa-solid fa-user"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <p>Adauga Departament</p>
+    <div id="add">
+        <form class="add-departament" action="/admin/insert-department" method="post">
+            <!-- <label for="departamentID">DepartamentID</label><br>
+            <input type="text" class="departamentID" name="depID" placeholder="ex. 11"> -->
+            <label for="numeDepartament">Nume Departament</label><br>
+            <input type="text" class="numeDepartament" name="numeDepartament" placeholder="ex. Dansuri">
+            <label for="codDepartament">Cod Departament</label><br>
+            <input type="text" class="codDepartament" name="codDep" placeholder="ex. DANS45">
+            <button class="btn-submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        hamburger = document.querySelection(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

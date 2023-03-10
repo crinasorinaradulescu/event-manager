@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="/navbar_style.css">
+        <link rel="stylesheet" href="/search.css">
+        <link rel="stylesheet" href="/home_search.css">
+        <script src="https://kit.fontawesome.com/17944d46af.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Eventim</div>
+                <form class="search-bar">
+                    <input type="text" class="search" placeholder="Cauta artisti si evenimente">
+                    <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                </form>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="/home" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="/artists">Artists</a>
+                    </li>
+                    <li>
+                        <a href="/departments">Departments</a>
+                    </li>
+                    <li>
+                        <a href="/events">Events</a>
+                    </li>
+                    <li>
+                        <a href="/admin"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="actions">
+        <div class="simple-query">
+        <p>Afiseaza artistii cu un salariu mai mare decat:</p>
+    <form class="query" action="/home/big-salary" method="POST">
+        <input type="text" name="salariu" placeholder="ex. 4000">
+        <button class="search" id="search" type="submit">Search</button>
+    </form>
+    <p>Afiseaza artistii dintr-un anumit departament:</p>
+    <form class="query" action="/home/by-department" method="POST">
+        <input type="text" name="numeDepartament" placeholder="ex. Canto">
+       <button class="search" id="search" type="submit">Search</button>
+    </form>
+    <p>Afiseaza numarul artistilor si media salariilor pentru fiecare departament</p>
+    <form  action="/home/avg-salary" method="POST">
+        <button class="search-avg" id="search" type="submit">Search</button>
+    </form>
+
+    <p>Afiseaza evenimentele pentru care numarul de ore lucrate de artisti este mai
+        mare decat:</p>
+    <form class="query" action="/home/event-hours" method="POST">
+        <input type="text" name="ore" placeholder="ex. 3">
+       <button class="search" id="search" type="submit">Search</button>
+    </form>
+
+    <p>Afiseaza toate evenimentele pentru care lucreaza artistul:</p>
+    <form class="query" action="/home/artists-events" method="POST">
+        <input type="text" name="nume" placeholder="ex. Popescu">
+       <button class="search" id="search" type="submit">Search</button>
+    </form>
+
+    <p>Afiseaza numarul artistilor si orele alocate fiecarui eveniment</p>
+    <form  action="/home/events-artists" method="POST">
+       <button class="search-total" id="search" type="submit">Search</button>
+    </form>
+    </div>
+
+        <div class="complex-query">
+            <p>Afiseaza departamentele pentru care media salariilor artistilor este mai mare decat
+                media salariului pe intreaga companie</p>
+        <form  action="/home/salary-department" method="POST">
+        <button class="search-total" id="search" type="submit">Search</button>
+        </form>
+
+            <p>Afiseaza artistul care nu este asignat la niciun eveniment</p>
+        <form  action="/home/artist-without-event" method="POST">
+        <button class="search-total" id="search" type="submit">Search</button>
+        </form>
+
+        <p>Afiseaza bugetul si artistii care lucreaza pentru fiecare eveniment</p>
+        <form  action="/home/events-buget-names" method="POST">
+            <button class="search-total" id="search" type="submit">Search</button>
+            </form>
+    
+        <p>Afiseaza numele complet si departamentul artistului:</p>
+        <form class="query" action="/home/full-name-artist-department" method="POST">
+            <input type="text" name="numeArtist" placeholder="ex. Popescu">
+           <button class="search" id="search" type="submit">Search</button>
+        </form>
+    </div>
+            </div>
+
+        <script>
+            hamburger = document.querySelection(".hamburger");
+            hamburger.onclick = function(){
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+        
+    </body>
+</html>

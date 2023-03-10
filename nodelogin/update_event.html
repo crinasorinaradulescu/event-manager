@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/navbar_style.css">
+    <link rel="stylesheet" href="/search.css">
+    <link rel="stylesheet" href="/changes.css">
+    <link rel="stylesheet" href="/add_style.css">
+    <link rel="stylesheet" href="/delete_style.css">
+    <link rel="stylesheet" href="/update_style.css">
+    <script src="https://kit.fontawesome.com/17944d46af.js" crossorigin="anonymous"></script>
+    <title>Admin Pannel</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Eventim</div>
+            <form class="search-bar">
+                <input type="text" class="search" placeholder="Cauta artisti si evenimente">
+                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+            </form>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/artists">Artists</a>
+                </li>
+                <li>
+                    <a href="/departments">Departments</a>
+                </li>
+                <li>
+                    <a href="/events">Events</a>
+                </li>
+                <li>
+                    <a href="/admin"  class="active"><i class="fa-solid fa-user"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+        <div id="up">
+            <form class="update-event" action="/admin/update-event" method="POST">
+                <p>Inlocuieste tipul si bugetul Evenimentului</p>
+                <label for="current-tip">Tip Eveniment</label><br>
+                <input type="text" class="current-tip" name="currentType" placeholder="ex. Concert">
+                <label for="current-buget">Buget</label><br>
+                <input type="text" class="current-buget" name="currentBuget" placeholder="ex. 5500">
+
+                <p>Cu alt tip si buget</p>
+                <label for="update-tip">Tip Eveniment</label><br>
+                <input type="text" class="update-tip" name="tip" placeholder="ex. Concert">
+                <label for="update-buget">Buget</label><br>
+                <input type="text" class="update-buget" name="buget" placeholder="ex. 5500">
+                <button class="btn-submit" type="submit">Submit</button>
+            </form>
+           
+        </div>
+    
+
+    <script>
+        hamburger = document.querySelection(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

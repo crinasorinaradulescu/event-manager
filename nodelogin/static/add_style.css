@@ -1,0 +1,271 @@
+#add{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5vh;
+    margin-bottom: 4vh;
+
+}
+
+.add-departament{
+    margin-left: 2vw;;
+}
+
+.add-event{
+    margin-left: 2vw;;
+}
+
+
+label{
+    margin-left: 1.8vw;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 300;
+}
+
+.artistID{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.depID{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.nume{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.prenume{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.cnp{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.sex{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.telefon{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.strada{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.numar{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.dataAngajare{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.salariu{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.departamentID{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.numeDepartament{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.codDepartament{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.evenimentID{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.tip{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.codEveniment{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.buget{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2vh;
+    background-color: #fefefe;
+    border-color: #11101b;
+    width: 21.5vw;
+    height: 3vh;
+    border-radius: 15px;
+    margin-bottom: 1.5vh;
+}
+
+.btn-submit{
+    margin-top: 5vh;
+    width: 8vw;
+    height: 4vh;
+    background-color: white;
+    border-color: black;
+    border-radius: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 600;
+    margin-left: 1vw;
+    cursor: pointer;
+}
